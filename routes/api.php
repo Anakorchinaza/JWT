@@ -26,4 +26,5 @@ Route::group(['midd leware' => 'api', 'prefix' =>'auth'], function($router){
     Route::get('/profile', [AuthController::class, 'Profile']);
     Route::post('/logout', [AuthController::class, 'Logout']);
     Route::post('/refresh', [AuthController::class, 'Refresh']);
+    Route::post('/refresh/get', [AuthController::class, 'RefreshGet']);
 });
